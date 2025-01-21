@@ -33,6 +33,7 @@ jobs:
         - { tag: pg13-geos38-gdal31-proj71, mode: tests }
         - { tag: pg12-geos38-gdal30-proj611, mode: tests }
 
+    if: github.repository_owner == 'postgis'
     runs-on: ubuntu-latest
     steps:
 
